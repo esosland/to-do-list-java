@@ -42,5 +42,12 @@ public class TaskTest {
     assertEquals(Task.all().size(), 0);
   }
 
+  @Test
+  public void getId_tasksInstantiateWithAnId_1() {
+    Task.clear();
+    Task myTask = new Task("Mow the lawn");
+    assertEquals(1, myTask.getId());
+  }
+
 
 }
