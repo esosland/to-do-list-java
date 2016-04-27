@@ -55,4 +55,9 @@ public class TaskTest {
     Task secondTask = new Task("Buy groceries");
     assertEquals(Task.find(secondTask.getId()), secondTask);
     }
+
+    @Test
+    public void find_returnsNullWhenNoTakFound_null() {
+      assertTrue(Task.find(999) == null);
+    }
   }
