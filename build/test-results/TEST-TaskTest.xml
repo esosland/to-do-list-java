@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TaskTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-04-26T18:17:27" hostname="epicodus-61.local" time="0.0">
+<testsuite name="TaskTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-04-27T15:41:05" hostname="epicodus-48.local" time="0.0">
   <properties/>
+  <testcase name="isComplete_isFalseAfterInstantiation_false" classname="TaskTest" time="0.0"/>
   <testcase name="Task_instantiatesCorrectly_true" classname="TaskTest" time="0.0"/>
   <testcase name="Task_instantiatesWithDescription_String" classname="TaskTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
