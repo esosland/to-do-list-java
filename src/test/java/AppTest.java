@@ -26,6 +26,16 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("Add a New Category");
   }
 
+  @Test
+  public void categoryIsCreatedTest() {
+    goTo("http://localhost:4567/");
+    click("a", withText("Add a New Category"));
+    fill("#name").with("Household chores");
+    submit(".btn");
+    assertThat(pageSource()).contains("Your category has been saved.");
+  }
+
+
 //   @Test
 //   public void taskIsCreatedTest() {
 //     goTo("http://localhost:4567/");
