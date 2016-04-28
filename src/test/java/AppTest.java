@@ -54,6 +54,18 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("Household chores");
   }
 
+  @Test
+  public void categoryTasksFormIsDisplayed() {
+    goTo("http://localhost:4567/categories/new");
+    fill("#name").with("Shopping");
+    submit(".btn");
+    click("a", withText("View categories"));
+    click("a", withText("Shopping"));
+    click("a", withText("Add a new task"));
+    assertThat(pageSource()).contains("Add a task to Shopping");
+  }
+
+
 
 //   @Test
 //   public void taskIsCreatedTest() {
