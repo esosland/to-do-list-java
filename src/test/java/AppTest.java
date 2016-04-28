@@ -65,6 +65,21 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("Add a task to Shopping");
   }
 
+  @Test
+  public void tasksIsAddedAndDisplayed() {
+    goTo("http://localhost:4567/categories/new");
+    fill("#name").with("Banking");
+    submit(".btn");
+    click("a", withText("View categories"));
+    click("a", withText("Banking"));
+    click("a", withText("Add a new task"));
+    fill("#description").with("Deposit paycheck");
+    submit(".btn");
+    click("a", withText("View categories"));
+    click("a", withText("Banking"));
+    assertThat(pageSource()).contains("Deposit paycheck");
+  }
+
 
 
 //   @Test
