@@ -44,6 +44,16 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("Household chores");
   }
 
+  @Test
+  public void categoryShowPageDisplaysName() {
+    goTo("http://localhost:4567/categories/new");
+    fill("#name").with("Household chores");
+    submit(".btn");
+    click("a", withText("View categories"));
+    click("a", withText("Household chores"));
+    assertThat(pageSource()).contains("Household chores");
+  }
+
 
 //   @Test
 //   public void taskIsCreatedTest() {

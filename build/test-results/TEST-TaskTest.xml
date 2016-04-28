@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TaskTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2016-04-28T18:27:06" hostname="epicodus-48.local" time="0.003">
+<testsuite name="TaskTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2016-04-28T18:36:59" hostname="epicodus-48.local" time="0.003">
   <properties/>
-  <testcase name="find_returnsNullWhenNoTaskFound_null" classname="TaskTest" time="0.001"/>
-  <testcase name="task_instantiatesCorrectly_true" classname="TaskTest" time="0.0"/>
+  <testcase name="find_returnsNullWhenNoTaskFound_null" classname="TaskTest" time="0.0"/>
+  <testcase name="task_instantiatesCorrectly_true" classname="TaskTest" time="0.001"/>
   <testcase name="getId_tasksInstantiateWithAnID_1" classname="TaskTest" time="0.0"/>
-  <testcase name="getCreatedAt_instantiatesWithCurrentTime_today" classname="TaskTest" time="0.001"/>
+  <testcase name="getCreatedAt_instantiatesWithCurrentTime_today" classname="TaskTest" time="0.0"/>
   <testcase name="isCompleted_isFalseAfterInstantiation_false" classname="TaskTest" time="0.0"/>
-  <testcase name="all_returnsAllInstancesOfTask_true" classname="TaskTest" time="0.0"/>
+  <testcase name="all_returnsAllInstancesOfTask_true" classname="TaskTest" time="0.001"/>
   <testcase name="find_returnsTaskWithSameId_secondTask" classname="TaskTest" time="0.0"/>
   <testcase name="clear_emptiesAllTasksFromArrayList_0" classname="TaskTest" time="0.0"/>
   <testcase name="task_instantiatesWithDescription_String" classname="TaskTest" time="0.0"/>
